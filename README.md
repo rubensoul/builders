@@ -4,6 +4,8 @@
 - Login e um fake backend para acesso área restrita
 - Busca ao endpoint por cidade, e pela geolocalização do usuário
 
+## Para testar localmente 
+- Necessário inserir o KeyApi do site OpenWathermap em environments: `apiKeyOpenWeathermap`
 
 ## Teste Builders desenvolvido em angular 11
 
