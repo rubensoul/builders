@@ -1,0 +1,27 @@
+
+  <div class="d-flex justify-content-center" *ngIf="loading">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+
+  <div class="s01" *ngIf="!loading">
+      <div class="class-design">
+        <form>
+            <div class="inner-form">
+            <div class="input-field first-wrap">
+                <input id="search" type="text" [(ngModel)]="endereco"  name="endereco" (input)="search($event)" placeholder="Entre com a cidade" />
+            </div>
+            <div class="input-field third-wrap">
+                <button class="btn-search" type="button">Buscar</button>
+            </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="class-design inner-form text-center" *ngIf="geoData && !loading">
+    <h2>{{geoData?.name}} -  {{geoData?.sys?.country}}</h2>
+    <p *ngIf="geoData?.main?.temp">{{geoData?.main?.temp}}℃ - Umidade: {{geoData?.main?.humidity}} </p>
+</div>
+
