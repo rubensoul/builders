@@ -1,9 +1,8 @@
 <!-- nav -->
-<nav class="navbar navbar-expand navbar-default" *ngIf="currentUser">
+<nav class="navbar navbar-expand navbar-default right" *ngIf="currentUser">
   <div class="navbar-nav">
-      <a class="nav-item nav-link" routerLink="/" routerLinkActive="active">Home</a>
-      <a class="nav-item nav-link" (click)="logout()">Logout</a>
+      <a class="nav-item nav-link" href="javascript:;" (click)="logout()">Logout</a>
   </div>
 </nav>
-
+<!-- {{currentUser.username}} -->
 <router-outlet></router-outlet>

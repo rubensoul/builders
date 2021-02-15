@@ -21,7 +21,9 @@
     </div>
 </div>
 <div class="class-design inner-form text-center" *ngIf="geoData && !loading">
-    <h2>{{geoData?.name}} -  {{geoData?.sys?.country}}</h2>
-    <p *ngIf="geoData?.main?.temp">{{geoData?.main?.temp}}℃ - Umidade: {{geoData?.main?.humidity}} </p>
+    <div class="data-info">
+        <h2 *ngIf="geoData?.name">{{geoData?.name}} -  {{geoData?.sys?.country}}</h2>
+        <p *ngIf="geoData?.main">{{geoData?.main?.temp}}℃ - Umidade: {{geoData?.main?.humidity}}% </p>
+    </div>
 </div>
 

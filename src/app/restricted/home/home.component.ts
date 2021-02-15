@@ -23,8 +23,10 @@ export class HomeComponent {
 
     getLocation(): void{
         if (navigator.geolocation) {
+            this.loading = true
             navigator.geolocation.getCurrentPosition((position)=>{
               this.dataGeolocation = { "longitude": position.coords.longitude, "latitude": position.coords.latitude }
+              this.loading = false;
             });
         } else {
            console.log("No support for geolocation")

@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   apiUrl: 'http://localhost:4000',
   openweathermap: "http://api.openweathermap.org/data/2.5/",
-  apiKeyOpenWeathermap: "163fa3e20790f887d93f01ab168002d9"
+  apiKeyOpenWeathermap: "" // key
 };
 
 /*
