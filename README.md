@@ -1,6 +1,6 @@
 # Sobre o Teste 
 
-- Feito busca a partir da localicação do usuário no navegador
+- Feito busca a partir da localização do usuário no navegador
 - Login e um fake backend para acesso área restrita
 - Busca ao endpoint por cidade, e pela geolocalização do usuário
 
