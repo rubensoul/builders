@@ -1,6 +1,25 @@
-﻿<app-geolocation *ngIf="dataGeolocation" [geolocation]="dataGeolocation"></app-geolocation>
-<div class="d-flex justify-content-center" *ngIf="loading">
-    <div class="spinner-border" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
+﻿
+ <div class="s01">
+    <div class="class-design">
+      <form>
+          <div class="inner-form">
+          <div class="input-field first-wrap">
+              <input id="search" type="text" [(ngModel)]="endereco"  name="endereco" (input)="search($event)" placeholder="Entre com a cidade" />
+          </div>
+          <div class="input-field third-wrap">
+              <button class="btn-search" type="button">Buscar</button>
+          </div>
+          </div>
+      </form>
   </div>
+</div>
+
+<div class="d-flex justify-content-center" *ngIf="loading">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+
+<app-geolocation *ngIf="!loading && geoData" [geoData]="geoData"></app-geolocation>
+
+
