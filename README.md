@@ -1,4 +1,11 @@
-# Teste Builders
+# Sobre o Teste 
+
+- Feito busca a partir da localicação do usuário no navegador
+- Login e um fake backend para acesso área restrita
+- Busca ao endpoint por cidade, e pela geolocalização do usuário
+
+
+## Teste Builders desenvolvido em angular 11
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
 
@@ -6,8 +13,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 > [Builders](https://rubensoul.com.br/builders)
 
 
-## Screenshots das telas
+## Screenshots da tela de Login
 ![Tela de Login](screenshot/login.png)
+
+## Screenshots tela de busca
 ![Tela de busca e retorno dos dados](screenshot/search.png)
 
 
